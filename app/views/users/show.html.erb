@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Romaji:</strong>
+  <%= @user.romaji %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @user.interest %>
+</p>
+
+<p>
+  <strong>Hobby:</strong>
+  <%= @user.hobby %>
+</p>
+
+<p>
+  <strong>Skill:</strong>
+  <%= @user.skill %>
+</p>
+
+<% if @user.image? %>
+    <%= image_tag @user.image.url %>
+    <% else %>
+    <%= image_tag 'noimage.gif' %>
+<% end %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

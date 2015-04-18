@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  romaji: MyString
+  interest: MyString
+  hobby: MyString
+  skill: MyString
+  interest: MyString
+
+two:
+  name: MyString
+  romaji: MyString
+  interest: MyString
+  hobby: MyString
+  skill: MyString
+  interest: MyString
