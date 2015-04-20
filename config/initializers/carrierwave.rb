@@ -11,7 +11,7 @@ CarrierWave.configure do |config|
   }
 
 if Rails.env.development?
-config.fog_directory = 'prof-imagse' 
+config.fog_directory = 'prof-images' 
 else
 config.fog_directory = 'prof-images' 
 config.cache_dir = "#{Rails.root}/tmp/uploads" #for Heroku

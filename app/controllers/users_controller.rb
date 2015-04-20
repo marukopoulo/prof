@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_filter :basic_auth, only: [:index, :show,:edit,:update,:destroy]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -28,7 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to "/complete", notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -71,4 +72,10 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :romaji, :interest, :hobby, :skill, :interest,:image)
     end
+
+    def basic_auth
+    authenticate_or_request_with_http_basic do |user,pass|
+      user == ENV["BASIC_AUTH_USER"] && ENV["BASIC_AUTH_PASSWORD"]
+    end
+  end
 end

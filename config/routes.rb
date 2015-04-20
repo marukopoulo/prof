@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+  get 'static_pages/complete'
+
   resources :users
+  root 'users#new'
+  get "static_pages/complete"
+  get 'complete' => 'static_pages#complete'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
