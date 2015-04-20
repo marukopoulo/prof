@@ -13,23 +13,23 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.text_field :name , :size => 30%>
   </div>
   <div class="field">
     <%= f.label :romaji %><br>
-    <%= f.text_field :romaji %>
+    <%= f.text_field :romaji , :size => 30%>
   </div>
   <div class="field">
     <%= f.label :interest %><br>
-    <%= f.text_field :interest %>
+    <%= f.text_field :interest , :size => 30%>
   </div>
   <div class="field">
     <%= f.label :hobby %><br>
-    <%= f.text_field :hobby %>
+    <%= f.text_field :hobby , :size => 30%>
   </div>
   <div class="field">
     <%= f.label :skill %><br>
-    <%= f.text_field :skill %>
+    <%= f.text_field :skill , :size => 30 %>
   </div>
 
   <div>
@@ -39,6 +39,6 @@
     </div>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  "登録する"%>
   </div>
 <% end %>

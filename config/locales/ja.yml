@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー             # モデル名
+    attributes:
+      user:                      # モデル名
+        name: 名前               # モデルの属性名 
+        romaji: ローマ字      #ローマ字
+        interest:  関心分野
+        hobby: 趣味
+        skill: 持っている技術
+        image: 顔写真(顔が特定できるものでお願いします)
