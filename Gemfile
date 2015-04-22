@@ -27,6 +27,7 @@ gem "geocoder"
  gem "koala"
  gem 'acts-as-taggable-on', '~> 3.4'
  gem 'activeadmin', github: 'activeadmin'
+ gem 'jpmobile'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
