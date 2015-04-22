@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require common
+ *= require smart_phone/scaffolds
+ *= require smart_phone/static_pages
  */
