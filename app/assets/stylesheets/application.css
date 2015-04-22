@@ -12,7 +12,7 @@
  * file per style scope.
  *
  *= require_self
- *= require 　scaffolds
+ *= require smart_phone/scaffolds
  *= require static_pages
   *= require users
  */
