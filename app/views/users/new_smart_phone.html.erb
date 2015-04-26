@@ -25,6 +25,11 @@
     </div>
   <% end %>
 
+      <div class = "field">
+    <%= f.label :division %><br>
+    <%= f.select :division, [["M1", "M1"], ["D1", "D1"]], :selected => "M1" %>
+  </div>
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name , :size => 26 %>
