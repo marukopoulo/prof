@@ -4,6 +4,7 @@ ja:
       user: ユーザー             # モデル名
     attributes:
       user:                      # モデル名
+        division: 区分
         name: 名前               # モデルの属性名 
         romaji: ローマ字      #ローマ字
         interest:  関心分野
