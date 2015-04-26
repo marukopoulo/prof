@@ -11,14 +11,26 @@
     </div>
   <% end %>
 
+
+    <div class = "field">
+    <%= f.label :division %><br>
+    <%= f.select :division, [["M1", "M1"], ["D1", "D1"]], :selected => "M1" %>
+  </div>
+
+
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name , :size => 44 %>
+    <%= f.text_field :name , :size => 26 %>
   </div>
+
   <div class="field">
     <%= f.label :romaji %><br>
-    <%= f.text_field :romaji , :size => 44%>
+    <%= f.text_field :romaji , :size => 26%>
   </div>
+
+
+
+
   <div class="field">
     <%= f.label :interest %><br>
     <%= f.text_field :interest , :size => 44%>
