@@ -1,0 +1,47 @@
+<h1>KMD2015 members</h1>
+
+<div class = "column5 clear">
+  <div class = "column1">
+    1  
+  </div>
+    <div class = "column1">
+    2
+  </div>
+  <div class = "column1">
+    3
+  </div>
+    <div class = "column1">
+    4
+  </div>
+      <div class = "column1">
+    5
+  </div>
+      <div class = "column1">
+    6
+  </div>
+<div class = "column1">
+    7
+  </div>
+</div>
+
+
+
+<div class = "column5 clear">
+  <% @users.each do |user| %>
+  <div class = "column1">
+    <% if user.name? %>
+    <%= user.name %><br>
+    <% else %>
+    "name nothing"<br>
+    <% end %>
+
+    <% if user.romaji? %>
+    <%= user.romaji %><br>
+    <% else %>
+    "romaji nothing"<br>
+    <% end %>
+    <%= user.nick %><br>
+    </div>
+    <% end %>
+  </div>
+</div>
