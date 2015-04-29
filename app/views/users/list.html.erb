@@ -29,6 +29,14 @@
 <div class = "column5 clear">
   <% @users.each do |user| %>
   <div class = "column1">
+
+    <% if user.image? %>
+      <%= image_tag(user.image.url,:width => "330px") %><br>
+    <% else %>
+      <%= image_tag 'noimage.gif' %></br>
+    <% end %>
+
+
     <% if user.name? %>
     <%= user.name %><br>
     <% else %>
@@ -40,8 +48,46 @@
     <% else %>
     "romaji nothing"<br>
     <% end %>
+
+    <% if user.division? %>
+    <%= user.division %><br>
+    <% else %>
+    "division nothing"<br>
+    <% end %>
+
+    <% if user.nick? %>
     <%= user.nick %><br>
+    <% else %>
+    "nick nothing"<br>
+    <% end %>
+
+    <% if user.interest? %>
+    <%= user.interest %><br>
+    <% else %>
+    "interest nothing"<br>
+    <% end %>
+
+    <% if user.hobby? %>
+    <%= user.hobby %><br>
+    <% else %>
+    "hobby nothing"<br>
+    <% end %>
+
+    <% if user.skill? %>
+    <%= user.skill %><br>
+    <% else %>
+    "skill nothing"<br>
+    <% end %>
+
+
+
+
+
+
     </div>
     <% end %>
+
+
+
   </div>
 </div>
