@@ -34,9 +34,16 @@
   <strong>Skill:</strong>
   <%= @user.skill %>
 </p>
-
+<p>
 <% if @user.image? %>
     <%= image_tag @user.image.url %>
+    <% else %>
+    <%= image_tag 'noimage.gif' %>
+<% end %>
+</p>
+
+<% if @user.imagesq? %>
+    <%= image_tag @user.imagesq.url %>
     <% else %>
     <%= image_tag 'noimage.gif' %>
 <% end %>

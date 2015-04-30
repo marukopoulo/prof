@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150426150404) do
+ActiveRecord::Schema.define(version: 20150429195450) do
 
   create_table "users", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150426150404) do
     t.string   "image"
     t.string   "division"
     t.string   "nick"
+    t.string   "imagesq"
   end
 
 end
