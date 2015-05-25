@@ -53,9 +53,18 @@ width: 300px;
 }
 
 .userlist {
-  margin-bottom:50px;
+  margin-bottom:30px;
   height:700px;
-  font-size:15px;
-  width:330px
+  font-size:16px;
+  width:330px;
+  line-height:1.3em;
+}
+
+.userlist strong{
+  font-size:18px
+}
+
+.userlist img{
+  margin-bottom:20px;
 }
 
