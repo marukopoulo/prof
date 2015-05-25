@@ -14,67 +14,48 @@
 
 
 			<% if user.name? %>
-			    <strong>名前</strong><br>
+			<strong>【名前】</strong><br>
 			<%= user.name %><br>
-			<% else %>
-     		   	   <strong>名前</strong><br>			
-			"name nothing"<br>
+
 			<% end %>
 
 			<% if user.romaji? %>
 			<%= user.romaji %><br>
-			<% else %>
-			"romaji nothing"<br>
 			<% end %>
 
 			<% if user.division? %>
-			    <strong>区分</strong><br>
+			<strong>【区分】</strong><br>
 
 			<%= user.division %><br>
-			<% else %>
-						    <strong>区分</strong><br>
 
-			"division nothing"<br>
 			<% end %>
 
 			<% if user.nick? %>
-						    <strong>ニックネーム</strong><br>
+			<strong>【ニックネーム】</strong><br>
 
 			<%= user.nick %><br>
-			<% else %>
-						    <strong>ニックネーム</strong><br>
 
-			"nick nothing"<br>
 			<% end %>
 
 			<% if user.interest? %>
-						    <strong>関心分野</strong><br>
+			<strong>【関心分野】</strong><br>
 
 			<%= user.interest %><br>
-			<% else %>
-									    <strong>関心分野</strong><br>
 
-			"interest nothing"<br>
 			<% end %>
 
 			<% if user.hobby? %>
-									    <strong>趣味</strong><br>
+			<strong>【趣味】</strong><br>
 
 			<%= user.hobby %><br>
-			<% else %>
-									    <strong>趣味</strong><br>
 
-			"hobby nothing"<br>
 			<% end %>
 
 			<% if user.skill? %>
-									    <strong>スキル</strong><br>
+			<strong>【スキル】</strong><br>
 
 			<%= user.skill %><br>
-			<% else %>
-									    <strong>スキル</strong><br>
 
-			"skill nothing"<br>
 			<% end %>
 
 
